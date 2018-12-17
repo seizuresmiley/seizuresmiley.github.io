@@ -1,76 +1,94 @@
 <html>
-    <head>
-          <!-- Compiled and minified CSS -->
+
+<head>
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    </head>
-    <body>
-        <nav>
-            <div class="nav-wrapper">
-              <a href="#" class="brand-logo center">MLSA</a>
-              <ul id="nav-mobile" class="left hide-on-med-and-down">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">MLSA</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
                 <li><a href="https://github.com/seizuresmiley/ml-seiyuu-analysis">Github</a></li>
-              </ul>
-            </div>
-          </nav>
-          <div class="row">
-              <br><br>
-              <h1 class="center">MLSeiyuuAnalysis</h1>
-            <h5 class="center">
-                Analysing Twitter Data of Various Voice Actresses
-                Related to THE IDOLM@STER Series of Video Games
-            </h5>
+            </ul>
+        </div>
+    </nav>
+    <div class="row">
+        <br><br>
+        <h1 class="center">MLSeiyuuAnalysis</h1>
+        <h5 class="center">
+            Analysing Twitter Data of Various Voice Actresses
+            Related to THE IDOLM@STER Series of Video Games
+        </h5>
         <br><br><br>
-        <div class="row">
-            <div class="col l3 s12 offset-l3">
-                    <div class="card blue-grey darken-1">
-                            <div class="card-content white-text">
-                              <span class="card-title">Overview Summary</span>
-                              <p>Summary of all users analysed</p>
-                            </div>
-                            <div class="card-action">
-                              <a href="#">Link</a>
-                            </div>
-                          </div>
+        <div class="row center">
+            <div class="col l4 s12 ">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Overview Summary</span>
+                        <p>Analysis of all seiyuus, combined into one.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="overview.html">View</a>
+                    </div>
+                </div>
             </div>
-            <div class="col l3 s12">
+            <div class="col l4 s12">
+                <div class="card blue-grey darken-1">
+                    <div class="card-content white-text">
+                        <span class="card-title">Individual Users</span>
+                        <p>Analysis on individuals.
+                        </p>
+                    </div>
+                    <div class="card-action">
+                        <a href="individual.html">View</a>
+                    </div>
+                </div>
+            </div>
+                <div class="col l4 s12">
                     <div class="card blue-grey darken-1">
-                            <div class="card-content white-text">
-                              <span class="card-title">Individual Users</span>
-                              <p>Summary of Individual users.</p>
-                            </div>
-                            <div class="card-action">
-                              <a href="individual.html">Link</a>
-                            </div>
-                          </div>
+                        <div class="card-content white-text">
+                            <span class="card-title">Findings</span>
+                            <p>Findings on the analysis results.</p>
+                        </div>
+                        <div class="card-action">
+                            <a href="writeup.html">View</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <br><br><br><br>
-        <div class="row">
-        <h3 class="center col l12">
-            More About This Project
-        </h3>
-        <h5 class="col l8 offset-l2">
-            <center>Leveraging Twitter's API, we pulled Tweets from various Voice Actresses (or "seiyuu", hence the project name) and analysed
-            various metrics such as likes, mentions and hashtags.
-            </center>
-        </h5>
         <br><br>
-        <h3 class="center col l12">
-            Technical Specifications
-        </h3>
-        <h5 class="col l8 offset-l2">
-            <center>
-            We used various Python tools and libraries to compile and visualize the data. <br>
-            Learn more about our tools and code through our Github Page.<br>
-            </center>
-        </h5>
-        <br><br><br>
+        <div class="row">
+            <h3 class="center col l12">
+                More About This Project
+            </h3>
+            <h5 class="col l8 offset-l2">
+                <center>Leveraging Twitter's API, we pulled Tweets from various Voice Actresses (or "seiyuu", hence
+                    the project name) and analysed
+                    various metrics such as likes, mentions and hashtags.
+                </center>
+            </h5>
+            <br><br>
+            <h3 class="center col l12">
+                Technical Specifications
+            </h3>
+            <h5 class="col l8 offset-l2">
+                <center>
+                    We used various Python tools and libraries to compile and visualize the data. <br>
+                    Learn more about our tools and code through our Github Page.<br>
+                </center>
+            </h5>
+            <br><br><br>
         </div>
         <div class="row center">
-        <a href = "https://github.com/seizuresmiley/ml-seiyuu-analysis" class="waves-effect waves-light btn">Learn More</a>
+            <a href="https://github.com/seizuresmiley/ml-seiyuu-analysis" class="waves-effect waves-light btn">Learn
+                More</a>
         </div>
-    </body>
+</body>
+
 </html>
