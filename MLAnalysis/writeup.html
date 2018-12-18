@@ -43,20 +43,95 @@
                 we used a thrid-party library named <a href="">tweepy</a> to simplify the process. Tweepy is a wrapper
                 around Twitter's API, which also handles authentication and "paging" for us.
                 <br><br>
-                We can then write a script to read the csv file, then using the "GET statuses/user-timeine/" API endpoint,
-                we would have a Tweet object with tweet contents and user information in a JSON format, with each request
+                We can then write a script to read the csv file, then using the "GET statuses/user-timeine/" API
+                endpoint,
+                we would have a Tweet object with tweet contents and user information in a JSON format, with each
+                request
                 yielding 200 tweets. Unfortunately,due to API limitations
-                imposed by Twitter, we cannot retrieve more than 3200 tweets without using their paid historical search API.
+                imposed by Twitter, we cannot retrieve more than 3200 tweets without using their paid historical search
+                API.
                 However, not all users we researched would have 3200 tweets.
                 <br><br>
-                Then we can dump the data into a JSON file for later analysis. This is to prevent calling the API excessively. (this endpoint
-                has a limit of 1500 requests per 15 minutes if autheticated using app auth.) It also makes sure that all users' information
+                Then we can dump the data into a JSON file for later analysis. This is to prevent calling the API
+                excessively. (this endpoint
+                has a limit of 1500 requests per 15 minutes if autheticated using app auth.) It also made sure that
+                all users' information
                 are pulled in a relatively small timeframe.
+                <br><br>
+                You can view an example of our data on our Github Page.
             </p>
         </div>
     </div>
     </div>
-    
+    <br><br>
+    <div class="row">
+        <div class="col s3 offset-s1">
+            <h4 id="data">Data Analysis</h4>
+        </div>
+        <div class="col s7">
+            <p>
+                For data analysis, we made some scripts to help us with understanding the data. 
+                We leveraged libraries such as "collections" and "pandas" in the process. At first, we used "matplotlib" but the results
+                weren't satisfactory. We didn't like how the graphs turned out to be, and the difficulty using the said library.
+                <br><br>
+                We looked
+                for alternatives and found "Pygal" to be the perfect fit for our project. Pygal made interactive charts instead of static images
+                like what matplotlib did.
+                <br><br>
+                For each users, we analysed their favourites accumulation and trends like hashtags and mentioned users.
+                <br>
+                We also analysed all user's trends like above, and also analysed various metrics such as follower counts, account creation date and following users.
+                <br><br>
+                You can see our analysis results for individual users <a href="individual.html">here</a> or overview of all users combined <a href="overview.html">here.</a>
+            </p>
+        </div>
+    </div>
+    </div>
+    <br><br>
+    <h3 class="center">Analysis Information</h3>
+    <br><br>
+    <div class="row">
+            <div class="col s3 offset-s1">
+                <h4 id="data">Analysis Results</h4>
+            </div>
+            <div class="col s7">
+                <p>
+                   From analysing the data, we found out that:
+                    <br><br>
+                   Most used tweet origin (relates to platform used) is <b>"Twitter for iOS"</b>
+                   <br>
+                   This took into account that each tweet would have it's own origin tag.
+                   <br><br>
+                   User with the most followers: <b><a href="https://twitter.com/aimi_sound" alt="Twitter Link">@aimi_sound</a></b> (Aimi Terakawa)
+                   <br><br>
+                   User mentioned the most: <b><a href="https://twitter.com/yun_yk28">@yun_yk28</a></b> (Yui Kondou)
+                   <br><br>
+                   Most used hashtag: <b><a href="https://twitter.com/search?q=%23ミリシタ" alt="search">#ミリシタ</a></b>
+                   <br>
+                   Followed by: <b><a href="https://twitter.com/search?q=%23imas_ml">#imas_ml</a></b>
+                    <br><br>
+                    Most retweets are from <b><a href="https://twitter.com/imasml_theater">@imasml_theater</a></b>
+                    <br><br>
+                    Most accounts are created during <b>2010 and 2011</b>
+                    <br><br>
+                    and more.
+                    <br><br>
+                    You can view the results from <a href="overview.html">here.</a>
+                </p>
+            </div>
+        </div>
+        </div>
+    <br><br>
+    <h3 class="center">What Did We Learn?</h3>
+    <br>
+    <div class="row ">
+        <div class="col l4 offset-l4">
+            We gained knowledge on using various python libraries and knowledge on using APIs.
+            <br><br>
+            From analysing the trends, we could see what people we follow are talking about. We would know what to follow.
+            Knowing the trends could be advantageous to advertising.
+        </div>
+    </div>
 </body>
 
 </html>
