@@ -1,0 +1,110 @@
+<html>
+
+<head>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <title>MLSeiyuuAnalysis</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="../MLAnalysis/main.html" class="brand-logo center">MLSA</a>
+            <ul id="nav-mobile" class="left hide-on-med-and-down">
+                <li><a href="https://github.com/seizuresmiley/ml-seiyuu-analysis">Github</a></li>
+            </ul>
+        </div>
+    </nav>
+<div class="row">
+    <h1 class="center">Overview</h1>
+    <br>
+    <h4 class="center">Analysis result of all users.</h4>
+    <div class="col l5 offset-l1">
+        <div class="card pink">
+            <div class="card-content white-text">
+                <span class="card-title">Tweet Metrics</span>
+                <p>
+                        Tweet-related metrics such as  mentions, hashtags annd retweets.
+                    </p>
+            </div>
+            <div class="card-action teal-text">
+                <a href="#tweet-metrics">View</a>
+            </div>
+        </div>
+    </div>
+    <div class="col l5 ">
+            <div class="card teal">
+                <div class="card-content white-text">
+                    <span class="card-title">Account Metrics</span>
+                    <p>
+                            Account-related metrics such as creation date, follower count and favourites count.
+                        </p>
+                </div>
+                <div class="card-action teal-text">
+                    <a href="#acc-metrics">View</a>
+                </div>
+            </div>
+        </div>
+</div>
+<br><br>
+<div class="row">
+<h3 class="center" id="tweet-metrics">Tweet Metrics</h3>
+<div class="col l6">
+    <div class="center">Hashtag Frequency</div>
+    <figure>
+        <embed type="image/svg+xml" src="charts/all/hashtags.svg">
+    </figure>
+</div>
+<div class="col l6">
+        <div class="center">Mentioned Users in Tweets</div>
+        <figure>
+            <embed type="image/svg+xml" src="charts/all/mentions_noself.svg">
+        </figure>
+    </div>
+    <div class="col l6">
+            <figure>
+                <embed type="image/svg+xml" src="charts/all/mentions_noself.svg">
+            </figure>
+        </div>
+        <div class="col l6">
+                <div class="center">Tweet Origin</div>
+                <figure>
+                    <embed type="image/svg+xml" src="charts/all/origin.svg">
+                </figure>
+            </div>
+</div>
+<br><br><br>
+<div class="row">
+    <h3 class="center" id="acc-metrics">Account Metrics</h3>
+    <div class="col l6">
+            <figure>
+                <embed type="image/svg+xml" src="charts/all/followers.svg">
+            </figure>
+        </div>
+        <div class="col l6">
+                <figure>
+                    <embed type="image/svg+xml" src="charts/all/friends.svg">
+                </figure>
+            </div>
+            <div class="col l6">
+                    <figure>
+                        <embed type="image/svg+xml" src="charts/all/year_created.svg">
+                    </figure>
+                </div>
+                <div class="col l6">
+                        <figure>
+                            <embed type="image/svg+xml" src="charts/all/status_count.svg">
+                        </figure>
+                    </div>
+                    <div class="col l6">
+                            <figure>
+                                <embed type="image/svg+xml" src="charts/all/verified.svg">
+                            </figure>
+                        </div>
+</div>
+</body>
+
+</html>
