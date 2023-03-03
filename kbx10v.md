@@ -84,7 +84,9 @@ To assign a color to it, hold Switch C for 3 seconds.
 
 To use it, simply press it and it will switch to the color you savd in it.
 
-Pressing Switch A or B will jump back to the previous color you had on.
+Pressing Switch A or B will jump back to the previous color you had on. 
+
+The hot button does not care which memory bank you had on, and will jump to the assigned color regardless.
 
 
 
