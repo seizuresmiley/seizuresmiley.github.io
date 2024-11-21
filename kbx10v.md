@@ -6,7 +6,7 @@ This will document only on-board function of the penlight, as the app is pretty 
 Quick references for advanced operations  (Without any explanations)
 > B Hold > Flash = Memory Mode (A = Cycle colors, B to select, B Hold = Turn off, A+B Hold = Reset, C = Cycle banks)
 
-> A > B > Blue Flash = Tuning (B to turn off)
+> A > A+B > Blue Flash = Tuning (B to turn off)
 
 
 ## Switches
@@ -74,7 +74,7 @@ To reset a memory bank, do as the same above but instead of turning it off like 
 
 ## Color Tuning
 
-Hold Switch A to turn on the penlight, when on, hold Switch B to enter connection mode. Proceed forward with the app.
+Hold Switch A to turn on the penlight, when on, hold Switch A+B to enter connection mode. Proceed forward with the app.
 
 ## Hot Button Assignment
 
@@ -82,7 +82,7 @@ Switch C acts like a hotkey for the penlight. You can assign one color to it.
 
 To assign a color to it, hold Switch C for 3 seconds.
 
-To use it, simply press it and it will switch to the color you savd in it.
+To use it, simply press it and it will switch to the color you saved in it.
 
 Pressing Switch A or B will jump back to the previous color you had on. 
 
