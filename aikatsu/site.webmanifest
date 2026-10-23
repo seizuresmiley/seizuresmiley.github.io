@@ -1,0 +1,24 @@
+{
+  "name": "アイカツ！アンコール 店舗一覧",
+  "short_name": "アイカツ店舗",
+  "lang": "ja",
+  "start_url": "/aikatsu/",
+  "scope": "/aikatsu/",
+  "display": "standalone",
+  "background_color": "#fff8fc",
+  "theme_color": "#b62069",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
