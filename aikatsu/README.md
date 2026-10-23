@@ -17,3 +17,14 @@
 4. ページをHTTPで開き、件数と検索を確認してください。
 
 検索条件は `?prefecture=東京都&q=秋葉原` のようにURLで共有できます。
+
+## 共有画像・アイコン
+
+`assets/` の画像はPillowとNoto Sans CJK JPによる文字組みで作成しています。イラスト・生成AIは使用していません。
+
+- `og-image.png`: 1200×630の共有画像。
+- `favicon.svg` / `favicon.ico` / `favicon-*.png`: タブ用アイコン。SVGは文字をアウトライン化。
+- `apple-touch-icon.png`: iPhoneホーム画面用、180×180、不透明。
+- `icon-192.png` / `icon-512.png`: Web App Manifest用。
+
+再生成: `python aikatsu/tools/generate-assets.py /path/to/noto-font-directory`（Pillow・fonttoolsが必要）。フォントは[Noto CJK](https://github.com/notofonts/noto-cjk)の `NotoSansCJKjp-Bold.otf` と `NotoSansCJKjp-Regular.otf` を用意してください（SIL Open Font License）。フォントファイルはサイトに配信しません。
