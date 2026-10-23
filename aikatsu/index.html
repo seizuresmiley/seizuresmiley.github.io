@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#d92c80">
+  <title>アイカツ！アンコール 店舗一覧</title>
+  <meta name="description" content="アイカツ！アンコールの取扱店舗を都道府県・店舗名・住所で検索。公式PDFから転記した非公式の店舗一覧です。">
+  <link rel="canonical" href="https://hasunosoraschoolidol.club/aikatsu/">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://hasunosoraschoolidol.club/aikatsu/">
+  <meta property="og:title" content="アイカツ！アンコール 店舗一覧">
+  <meta property="og:description" content="都道府県・店舗名・住所で取扱店舗を検索。">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="page-header">
+    <h1>アイカツ！アンコール<span>店舗一覧</span></h1>
+    <div class="source">
+      <a id="source-link" href="https://dcd.aikatsu.com/encore/pdf/shoplist.pdf" target="_blank" rel="noopener noreferrer">公式PDF ↗</a>
+      <span>掲載情報：<time id="source-date" datetime="2026-10-21">2026年10月21日</time>時点</span>
+      <span>最終更新：<time id="updated-date" datetime="2026-10-23">2026年10月23日</time></span>
+    </div>
+  </header>
+  <main>
+    <form id="filters" class="filters" role="search" aria-label="店舗を検索">
+      <div class="filter-fields">
+        <div><label for="prefecture">都道府県</label><select id="prefecture" name="prefecture" disabled><option value="">すべての都道府県</option></select></div>
+        <div><label for="query">店舗名・住所</label><input id="query" name="q" type="search" placeholder="例：秋葉原、GiGO" autocomplete="off" disabled></div>
+      </div>
+      <div class="filter-status"><p id="result-count" role="status" aria-live="polite">読み込み中…</p><button type="reset">条件をクリア</button></div>
+    </form>
+    <p id="message" hidden></p>
+    <div id="results" aria-label="検索結果" aria-busy="true"></div>
+    <noscript><p>店舗検索にはJavaScriptが必要です。<a href="https://dcd.aikatsu.com/encore/pdf/shoplist.pdf">公式PDFをご覧ください。</a></p></noscript>
+  </main>
+  <footer>公式PDFを転記した非公式の一覧です。稼働状況・カード在庫は各店舗にご確認ください。</footer>
+</body>
+</html>
